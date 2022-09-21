@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Certificard</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://kit.fontawesome.com/6ad911922d.js" crossorigin="anonymous"></script>
+<body>
+  <div class="container">
+    <header class="topo">
+      <div class="perfil">
+        <img class="perfil-Ft" src="https://github.com/devpbleite.png" />
+        <div class="texto-header">
+          <h1>Pablo Leite</h1>
+          <h3>Front-End Developer</h3>
+          <div class="icons">
+            <a class="link-icon" href="https://github.com/devpbleite" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+            <a class="link-icon" href="https://codepen.io/devpbleite" target="_blank"><i class="fa-brands fa-codepen fa-2x"></i></a>
+            <a class="link-icon" href="https://www.linkedin.com/in/pabloleite03/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="tema">
+        <input onclick="mudaTema()" class="tema" type="checkbox" id="switch" /><label for="switch">Toggle</label>
+      </div>
+    </header>
+    <main class="projetos">
+      <h2>Projetos Imersão Dev_ #alura</h2>
+      <ol>
+        <li onClick="exibir('calculadora')">
+          🔢 Calculadora
+          <ul>
+            <li class="lista-links" id="calculadora">
+              <p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="QWrgZRK" data-user="devpbleite" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/devpbleite/pen/QWrgZRK">
+  Calculadora</a> by Pablo Leite (<a href="https://codepen.io/devpbleite">@devpbleite</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            </li>
+          </ul>
+        </li>
+        <li onClick="exibir('conversor-moedas')">
+          💰 Conversor de moedas
+          <ul>
+            <li class="lista-links" id="conversor-moedas">
+              <p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="poVwxBR" data-user="devpbleite" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/devpbleite/pen/poVwxBR">
+  Conversor de Moedas.</a> by Pablo Leite (<a href="https://codepen.io/devpbleite">@devpbleite</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            </li>
+          </ul>
+        </li>
+        <li onClick="exibir('mentalista')">
+          🧐 O Mentalista
+          <ul>
+            <li class="lista-links" id="mentalista">
+              <p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="ZEoyqwy" data-user="devpbleite" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/devpbleite/pen/ZEoyqwy">
+  Mentalista</a> by Pablo Leite (<a href="https://codepen.io/devpbleite">@devpbleite</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            </li>
+          </ul>
+        </li>
+        <li onClick="exibir('gameflix')">
+          🎬 AluraFlix
+          <ul>
+            <li class="lista-links" id="gameflix">
+              <p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="NWMgOeG" data-user="devpbleite" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/devpbleite/pen/NWMgOeG">
+  AluraFlix</a> by Pablo Leite (<a href="https://codepen.io/devpbleite">@devpbleite</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            </li>
+          </ul>
+        </li>
+        <li onClick="exibir('classificacao')">
+          🏆 Tabela de classificação
+          <ul>
+            <li class="lista-links" id="classificacao">
+              <p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="wvjeEzm" data-user="devpbleite" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/devpbleite/pen/wvjeEzm">
+  Tabela de classificação</a> by Pablo Leite (<a href="https://codepen.io/devpbleite">@devpbleite</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            </li>
+          </ul>
+        </li>
+        <li onClick="exibir('certificard')">
+          👨‍💻 Certificard
+          <ul>
+            <li class="lista-links" id="certificard">
+              <p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="wvjeYjw" data-user="devpbleite" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/devpbleite/pen/wvjeYjw">
+  Certificard</a> by Pablo Leite (<a href="https://codepen.io/devpbleite">@devpbleite</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </main>
+  </div>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

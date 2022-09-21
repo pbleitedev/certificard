@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Strait&display=swap");
+body {
+  background: linear-gradient(236.85deg, #041832 27.26%, #3468a7 96.03%);
+  font-family: "Strait", sans-serif;
+}
+
+.container {
+  color: #292f37;
+  margin: 128px;
+  background: #f8f8f2;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px white, 1px 1px 10px black, 3px 3px 15px black;
+  padding: 25px;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil {
+  display: flex;
+}
+
+.perfil-Ft {
+  border: 5px white solid;
+  border-radius: 100%;
+  max-height: 160px;
+  box-shadow: 1px 1px 10px black;
+}
+
+.texto-header {
+  margin-left: 16px;
+}
+.texto-header h1 {
+  font-size: 36px;
+}
+.texto-header h3 {
+  font-size: 18px;
+}
+
+.tema button {
+  align-self: flex-end;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 8px 16px;
+  background: #e6eeff;
+  border-radius: 100px;
+  border: 2px solid #080d17;
+  box-shadow: 0px 3px 6px #6a6c6e;
+}
+
+.projetos {
+  background: linear-gradient(135deg, #1b2838, #749cff);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  padding: 16px 12px;
+  color: #c8c38f;
+  font-size: 24px;
+}
+
+.projetos ol {
+  list-style-type: none;
+  line-height: 45px;
+}
+
+.projetos ol > li {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.projetos ol > li:hover {
+  color: #94de6f;
+  text-shadow: 0 0 5px white;
+}
+
+.projetos h2 {
+  margin-left: 20px;
+  margin-bottom: -5px;
+  font-size: 36px;
+  color: #a6c88f;
+}
+.list-projeto {
+  list-style: none;
+}
+.lista-links {
+  display: none;
+  padding-right: 50px;
+}
+
+.link-icon:hover {
+  color: #a6c88f;
+}
+.link-icon {
+  font-size: 1.2rem;
+  color: #292f37;
+  transition: color 0.2s;
+}
+
+.dark {
+  background: radial-gradient(
+      farthest-corner at 40px 40px,
+      #09192d 0%,
+      #040e1b 80%
+    )
+    no-repeat fixed;
+}
+.dark .perfil-Ft {
+  border: 5px #2c313a solid;
+}
+.dark .container {
+  background: #2c313a;
+  color: #f8f8f2;
+}
+.dark .projetos {
+  background: linear-gradient(135deg, #1b2838, #746eb0);
+}
+.dark .tema button {
+  background: #1c1c1c;
+  color: #e6e6e6;
+  border: 2px solid #e6e6e6;
+}
+
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 30px;
+  background: #333439;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.2s;
+}
+
+input:checked + label {
+  background: #66e6ff;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 40px;
+}
+
+.dark .link-icon {
+  color: #f8f8f2;
+  transition: color 0.2s;
+}
+.dark .link-icon:hover {
+  color: #a6c88f;
+}
